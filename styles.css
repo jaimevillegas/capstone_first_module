@@ -160,5 +160,52 @@ body {
 
 .speaker-info>p {
     font-size: 0.9rem;
+}
 
+.partner {
+    background-color: var(--dark-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner h2 {
+    color: rgb(216, 214, 214);
+    font-size: 1.4rem;
+}
+
+.partner hr {
+    border: 0.2px solid transparent;
+    border-top: 1px solid var(--main-red-color);
+    margin-top: 0;
+    width: 40px;
+}
+
+.partner-logos {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+.partner-logos img{
+    height: 80px;
+}
+
+footer {
+    display: flex;
+    padding: 30px;
+    column-gap: 20px;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 150px;
+}
+
+footer p {
+    font-size: 0.7rem;
+    line-height: 0.2rem;
 }

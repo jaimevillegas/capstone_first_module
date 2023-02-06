@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
+
+:root {
+    --main-red-color: #ec5242;
+    --light-grey: #d3d3d3; 
+    --dark-grey: #5a5a5a;
+    --darker-grey: #272a31;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: var(--dark-grey);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.about-navigation-mobile button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 50px; 
+    height: 50px;
+}
+
+.about-navigation-mobile i {
+    font-size: 32px;
+    color: rgb(87, 87, 87);
+}
+
+.about-main-text {
+    background-color: #fbfbfb;
+}
+
+.about-hello-sharing-world {
+    color: var(--main-red-color);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.about-main-title {
+    color: var(--main-red-color);
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.about-main-description {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background: white; 
+    border: 2px solid var(--light-grey);
+    font-size: 0.9rem;
+}
+
+.about-contact-us-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-contact-us-main p {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+.about-contact-us-main a {
+    font-size: 0.8rem;
+    margin-top: 0;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-cc-logo {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.about-cc-logo h2 {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: rgb(44, 43, 43);
+}
+
+.about-cc-logo hr {
+    border: 0.2px solid transparent;
+    border-top: 0.5px solid var(--main-red-color);
+    margin: 0 auto;
+    width: 30px;
+    margin-bottom: 20px;
+}
+
+.about-cc-logo p {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    font-size: 0.9rem;
+}
+
+.about-cc-logo img {
+    display: inline-block;
+    margin: 30px auto;
+    border: 1px solid var(--light-grey);
+    padding: 30px;
+    width: 60%;
+}
+
+.past-global-summits {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--light-grey);
+}

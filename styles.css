@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
 
 :root {
-    --main-red-color: #fa3c28;
-    --light-grey: #f7f7f7; 
+    --main-red-color: #ec5242;
+    --light-grey: #d3d3d3; 
     --dark-grey: #5a5a5a;
     --darker-grey: #272a31;
 }
@@ -18,43 +18,68 @@ body {
     padding: 0;
 }
 
+.nav-and-main {
+    background-image: url('images/background1.png');
+    background-size: cover;
+}
+
 .navigation-mobile button {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    padding: 20px;
     width: 50px; 
     height: 50px;
+    margin-bottom: 20px;
 }
 
 .navigation-mobile i {
-    font-size: 32px;
+    font-size: 40px;
     color: rgb(87, 87, 87);
 }
 
 .hello-sharing-world {
     color: var(--main-red-color);
     font-size: 1.5rem;
+    margin: 10px 20px;
 }
 
 .main-title {
     color: var(--main-red-color);
     font-size: 2rem;
     font-weight: 900;
+    margin: 5px 20px;
 }
 
 .main-description {
-    background: var(--light-grey); 
+    margin: 20px;
+    padding: 10px;
+    background: #eeeeee; 
     border: 2px solid white;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
 }
 
 .main-dates {
     color: var(--dark-grey);
     font-weight: 900;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    margin: 20px;
+    margin-bottom: 10px;
+}
+
+.main-place {
+    margin-left: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 50px;
 }
 
 .main-program {
     background-color: var(--darker-grey);
+    background-image: url('images/robot.png');
+    background-size: 50px 50px;
     display: flex;
     flex-direction: column;
 }
@@ -76,7 +101,7 @@ body {
 
 .program {
     margin: 10px;
-    background-color: rgba(185, 185, 185, 0.089);
+    background-color: rgba(84, 84, 84, 0.748);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,20 +116,26 @@ body {
 
 .program h2 {
     color: var(--main-red-color);
+    min-width: 80px;
 }
 
 .program p {
     color: rgb(216, 214, 214);
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    padding-right: 10px;
 }
 
 .join-CC {
     background-color: var(--main-red-color);
     border: none;
     margin: 20px auto;
-    height: 50px;
-    padding: 20px;
+    height: 70px;
+    padding: 0 30px;
     color: rgb(216, 214, 214);
     font-weight: 600;
+    align-items: center;
+    text-align: center;
     /* CENTRAR TEXTO DEL BUTTON! */
 }
 
@@ -113,6 +144,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .featured-speakers>h2 {
@@ -136,8 +168,10 @@ body {
 }
 
 .speaker img {
-    height: 100px;
-    width: 100px;
+    /* height: 50%;
+    width: 50%; */
+    max-height: 150px;
+    max-width: 150px;
 } 
 
 .speaker-info>h2 {
@@ -160,6 +194,21 @@ body {
 
 .speaker-info>p {
     font-size: 0.9rem;
+}
+
+.more {
+    border: 1.7px solid var(--light-grey);
+    background: transparent;
+    padding: 15px;
+    margin: 20px;
+    width: 90%;
+    cursor: pointer;
+
+}
+
+.arrow-more-down {
+    color: var(--main-red-color);
+    padding-left: 10px;
 }
 
 .partner {
@@ -207,5 +256,6 @@ footer img {
 
 footer p {
     font-size: 0.7rem;
-    line-height: 0.2rem;
+    margin:  auto;
+    padding: 0;
 }

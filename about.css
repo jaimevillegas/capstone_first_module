@@ -18,21 +18,28 @@ body {
     padding: 0;
 }
 
+.about-nav-and-main {
+    background-image: url('images/background2.png');
+    background-size: cover;
+}
+
 .about-navigation-mobile button {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    padding: 20px;
     width: 50px; 
     height: 50px;
+    margin-bottom: 20px;
 }
 
 .about-navigation-mobile i {
-    font-size: 32px;
+    font-size: 40px;
     color: rgb(87, 87, 87);
 }
 
 .about-main-text {
-    background-color: #fbfbfb;
+    /* background-color: #fbfbfb; */
 }
 
 .about-hello-sharing-world {
@@ -53,13 +60,15 @@ body {
 .about-main-description {
     text-align: center;
     padding: 20px;
-    margin: 10px;
+    margin: 20px;
     background: white; 
     border: 2px solid var(--light-grey);
     font-size: 0.9rem;
+    margin-bottom: 0;
 }
 
 .about-contact-us-main {
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,6 +102,8 @@ body {
     font-weight: 600;
     font-size: 1.3rem;
     color: rgb(44, 43, 43);
+    width: 60%;
+    margin: auto;
 }
 
 .about-cc-logo hr {
@@ -101,6 +112,7 @@ body {
     margin: 0 auto;
     width: 30px;
     margin-bottom: 20px;
+    margin-top: 15px;
 }
 
 .about-cc-logo p {
@@ -114,12 +126,127 @@ body {
     display: inline-block;
     margin: 30px auto;
     border: 1px solid var(--light-grey);
-    padding: 30px;
-    width: 60%;
+    padding: 10px;
+    width: 80%;
 }
 
 .past-global-summits {
     margin: 0;
     padding: 0;
     border-top: 1px solid var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.past-global-summits>h2 {
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+.past-global-summits>hr {
+    border: 0.2px solid transparent;
+    border-top: 0.5px solid var(--main-red-color);
+    margin: 0 auto;
+    width: 30px;
+    margin-bottom: 20px;
+} 
+
+.past-global-summits>p {
+    width: 80%;
+    text-align: center;
+}
+
+.past-global-summits>div {
+    width: 80%;
+    height: 150px;
+    margin: 10px;
+}
+
+.global-summit-one {
+    background-image: url('images/global-summit-1.jpg');
+    background-size: cover;
+}
+
+.global-summit-two {
+    background-image: url('images/global-summit-2.jpg');
+    background-size: cover;
+}
+
+.container-summit {
+    background-color: #a62213b0;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-summit h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.container-summit p {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    width: 80%;
+}
+
+.partner {
+    margin-top: 20px;
+    background-color: var(--dark-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner h2 {
+    color: rgb(216, 214, 214);
+    font-size: 1.4rem;
+}
+
+.partner hr {
+    border: 0.2px solid transparent;
+    border-top: 1px solid var(--main-red-color);
+    margin-top: 0;
+    width: 40px;
+}
+
+.partner-logos {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+.partner-logos img{
+    height: 80px;
+}
+
+footer {
+    display: flex;
+    padding: 30px;
+    column-gap: 20px;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 150px;
+}
+
+footer p {
+    font-size: 0.7rem;
+    margin:  auto;
+    padding: 0;
 }

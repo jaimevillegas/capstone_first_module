@@ -327,6 +327,11 @@ footer p {
     display: none;
   }
 
+  .a-about {
+    color: var(--main-red-color);
+    font-weight: bold;
+  }
+
   .nav-bars-desktop {
     position: fixed;
     margin: 0;

@@ -178,6 +178,11 @@ footer p {
   column-gap: 10px;
 }
 
+.program:hover {
+  box-shadow: inset 0px 0px 0px 2px var(--light-grey);
+  transition: 0.2s linear;
+}
+
 .program img {
   padding-left: 10px;
   width: 48px;

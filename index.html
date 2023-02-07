@@ -9,9 +9,19 @@
     <title>Capstone Project</title>
 </head>
 <body>
+    <div id='modal-menu' class="modal-dialog">
+        <ul>
+            <a id='close-modal-menu' href=""><i class="fa-regular fa-rectangle-xmark"></i></a>
+            <li><a id='about-page' href="about.html">ABOUT</a> </li>
+            <li><a class="menuItem" href="">PROGRAM</a></li>
+            <li><a class="menuItem" href="">JOIN</a></li>
+            <li><a class="menuItem" href="">SPONSOR</a></li>
+            <li><a class="menuItem" href="">NEWS</a></li>
+        </ul>
+    </div>
     <section class="nav-and-main">
         <nav class="navigation-mobile">
-            <button class="burger-menu">
+            <button id='open-modal-menu' class="burger-menu">
                 <i class="fa-sharp fa-solid fa-bars"></i>
             </button>
         </nav>
@@ -135,6 +145,6 @@
             <p>Some Rights Reserved</p>
         </div>
     </footer>
-    
+    <script src="script.js"></script> 
 </body>
 </html>

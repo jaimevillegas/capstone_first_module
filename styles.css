@@ -157,8 +157,10 @@ footer p {
   font-weight: 600;
   align-items: center;
   text-align: center;
+}
 
-  /* CENTRAR TEXTO DEL BUTTON! */
+.join-program-desktop {
+  display: none;
 }
 
 .featured-speakers {
@@ -169,11 +171,14 @@ footer p {
   margin-top: 20px;
 }
 
-.featured-speakers > h2 {
+.featured-speakers-h2 {
   font-size: 1.2rem;
+  margin: 30px auto;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.featured-speakers > hr {
+.featured-speakers-hr {
   border: 0.2px solid transparent;
   border-top: 1px solid var(--main-red-color);
   margin: 0 auto;
@@ -264,11 +269,16 @@ footer p {
   height: 80px;
 }
 
-@media  all and (min-width: 768px) {
+.join-program {
+  display: none;
+}
+
+@media all and (min-width: 768px) {
   body {
     margin: 0;
     padding: 0;
   }
+
   .navigation-mobile {
     display: none;
   }
@@ -283,8 +293,8 @@ footer p {
     width: 100%;
     box-shadow: 1px 1px 15px var(--dark-grey);
   }
-  
-  .top-dark-navbar-desktop>ul {
+
+  .top-dark-navbar-desktop > ul {
     display: flex;
     justify-content: end;
     align-items: center;
@@ -292,27 +302,31 @@ footer p {
     background-color: #272a31;
     margin: 0;
   }
-  
+
   .top-dark-navbar-desktop i {
     padding: 10px;
     color: var(--light-grey);
   }
-  
+
   .top-dark-navbar-desktop li {
     padding: 10px;
     list-style-type: none;
   }
-  
+
   .top-dark-navbar-desktop a {
     font-size: 0.8rem;
     text-decoration: none;
     color: var(--light-grey);
   }
-  
+
   .top-fixed-navbar-desktop {
     display: flex;
     justify-content: space-between;
     background-color: #ececec;
+    height: 60px;
+  }
+  
+  .top-fixed-navbar-desktop img {
     height: 60px;
   }
 
@@ -333,6 +347,7 @@ footer p {
 
   .fixed-navbar-campaign {
     border: 2px solid var(--main-red-color);
+
     /* display: inline-block; */
     margin: 0;
     padding: 10px;
@@ -358,16 +373,23 @@ footer p {
 
   .container-programs {
     display: flex;
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
     column-gap: 0;
   }
 
   .program {
+    margin: 0;
+    margin-left: 2px;
+    margin-right: 2px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    border: 1px solid red;
+
+    /* padding: 10px; */
+    padding-top: 10px;
   }
 
   .program img {
@@ -375,7 +397,42 @@ footer p {
     margin: 0;
     width: 100px;
     height: 50px;
-    border: 1px solid blue;
   }
-  
+
+  .program h2 {
+    text-align: center;
+  }
+
+  .program p {
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .join-CC {
+    display: none;
+  }
+
+  .join-program-desktop {
+    display: block;
+    margin: 50px auto;
+    color: var(--light-grey);
+  }
+
+  .more {
+    display: none;
+  }
+
+  .featured-speakers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  .footer {
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+  }
 }

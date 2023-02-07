@@ -337,5 +337,45 @@ footer p {
     margin: 0;
     padding: 10px;
   }
+
+  .main-text {
+    margin-top: 100px;
+    padding: 50px 80px;
+  }
+
+  .hello-sharing-world {
+    font-size: 2rem;
+  }
+
+  .main-title {
+    font-size: 3rem;
+  }
+
+  .main-description {
+    text-align: left;
+    width: 60%;
+  }
+
+  .container-programs {
+    display: flex;
+    column-gap: 0;
+  }
+
+  .program {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid red;
+  }
+
+  .program img {
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    height: 50px;
+    border: 1px solid blue;
+  }
   
 }

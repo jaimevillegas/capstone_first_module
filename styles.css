@@ -246,7 +246,19 @@ footer p {
   justify-content: center;
   align-items: center;
   column-gap: 10px;
+  transition: all 1s linear;
+  animation: speakerAnimation1 1s ease forwards;
 }
+
+@keyframes speakerAnimation1 {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
 
 .speaker img {
   /* height: 50%;

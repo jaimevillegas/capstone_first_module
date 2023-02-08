@@ -13,12 +13,6 @@ const speakers = [
         description: 'Genious inventor, and consummate engineer who uses a powered suit of armor to protect the world as Iron Man.',
         image: './images/tony.png',
     },
-    // {
-    //     name: 'Maurice Moss',
-    //     profession: 'Programmer, IT Services',
-    //     description: 'IT Technician at Reynholm Industries in London.',
-    //     image: './images/moss.png',
-    // },
     {
         name: 'C3PO',
         profession: 'Humanoid Robot',
@@ -43,12 +37,6 @@ const speakers = [
         description: 'Genious inventor, and consummate engineer who uses a powered suit of armor to protect the world as Iron Man.',
         image: './images/tony.png',
     },
-    // {
-    //     name: 'Maurice Moss',
-    //     profession: 'Programmer, IT Services',
-    //     description: 'IT Technician at Reynholm Industries in London.',
-    //     image: './images/moss.png',
-    // },
     {
         name: 'C3PO',
         profession: 'Humanoid Robot',
@@ -93,24 +81,42 @@ function mobileMenuDisplayBlock() {
     navMenu.style.display = 'block';
 }
 
+function showSpeakersDesktop() {
+    speakers.forEach((speaker, index) => {
+        createSpeaker(speaker.name, speaker.profession, speaker.description, speaker.image);
+    });
+}
+
+function showTwoSpeakersMobile() {
+    for (let i = 0; i < 2; i++) {
+        createSpeaker(speakers[i].name, speakers[i].profession, speakers[i].description, speakers[i].image);
+    }
+
+}
+
 open.addEventListener('click', (() => { mobileMenuDisplayBlock(); }));
 close.addEventListener('click', (() => { mobileMenuDisplayNone(); }));
-// menuItem.addEventListener('click', (() => { mobileMenuDisplayNone(); }));
 
 window.addEventListener('load', (() => {
-    
     if ((window.getComputedStyle(buttonMore, null).display) == 'none') {
-        console.log('YO HABÍA PONIDO UN DISPLAY AQUÍ');
-        speakers.forEach((speaker, index) => {
-            createSpeaker(speaker.name, speaker.profession, speaker.description, speaker.image);
-            console.log(speaker.name);
-        });
+        showSpeakersDesktop();
     } else {
-        console.log("HABEMUS DISPLAY!")
-        for (let i = 0; i < 2; i++) {
-            createSpeaker(speakers[i].name, speakers[i].profession, speakers[i].description, speakers[i].image);
-            console.log(speakers[i].name);
-
-        }
+        showTwoSpeakersMobile();
     }
+}))
+
+window.addEventListener('resize', (() => {
+    if ((window.getComputedStyle(buttonMore, null).display) == 'none') {
+        speakersContainer.innerHTML = '';
+        showSpeakersDesktop();
+    } else {
+        speakersContainer.innerHTML = '';
+        showTwoSpeakersMobile();
+    }
+}))
+
+buttonMore.addEventListener('click', (() => {
+    speakersContainer.innerHTML = '';
+    showSpeakersDesktop();
+    buttonMore.style.display = 'none';
 }))

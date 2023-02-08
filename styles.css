@@ -245,6 +245,7 @@ footer p {
   column-gap: 10px;
   transition: all 1s linear;
   animation: speakerAnimation1 1s ease forwards;
+  z-index: -1;
 }
 
 @keyframes speakerAnimation1 {
@@ -378,6 +379,7 @@ footer p {
     font-size: 0.8rem;
     text-decoration: none;
     color: var(--light-grey);
+    z-index: 1;
   }
 
   .top-fixed-navbar-desktop {
@@ -385,6 +387,7 @@ footer p {
     justify-content: space-between;
     background-color: #ececec;
     height: 60px;
+    z-index: 1;
   }
 
   .top-fixed-navbar-desktop img {

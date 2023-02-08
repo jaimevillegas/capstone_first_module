@@ -107,6 +107,10 @@ If you like this project you are welcome to support it!
 
 I would like to thank to Microverse on giving me the oportunity to develop my coding skills
 
+Thanks to Cindy Shin, author of the design of the website:
+
+https://www.behance.net/adagio07
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>

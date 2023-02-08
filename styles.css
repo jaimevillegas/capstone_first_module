@@ -37,21 +37,20 @@ footer p {
 
 .modal-dialog {
   display: none;
-  /* display: block; */
   position: fixed;
   z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
   height: 100vh;
-  overflow-y:hidden; 
+  overflow-y: hidden;
   background-color: var(--darker-grey);
 }
 
 .modal-dialog ul {
   list-style-type: none;
   padding: 40px;
-} 
+}
 
 .modal-dialog i {
   font-size: 1.2em;
@@ -59,6 +58,11 @@ footer p {
   position: relative;
   left: 90%;
   transition: 0.2s linear;
+}
+
+.navigation-mobile i {
+  font-size: 40px;
+  color: rgb(87, 87, 87);
 }
 
 .modal-dialog i:hover {
@@ -69,7 +73,6 @@ footer p {
 .modal-dialog li {
   margin: 40px auto;
 }
-
 
 .modal-dialog a {
   color: var(--light-grey);
@@ -82,7 +85,6 @@ footer p {
   color: var(--main-red-color);
   transition: 0.2s linear;
 }
-
 
 .nav-bars-desktop {
   display: none;
@@ -101,11 +103,6 @@ footer p {
   width: 50px;
   height: 50px;
   margin-bottom: 20px;
-}
-
-.navigation-mobile i {
-  font-size: 40px;
-  color: rgb(87, 87, 87);
 }
 
 .hello-sharing-world {
@@ -179,7 +176,7 @@ footer p {
 }
 
 .program:hover {
-  box-shadow: inset 0px 0px 0px 2px var(--light-grey);
+  box-shadow: inset 0 0 0 2px var(--light-grey);
   transition: 0.2s linear;
 }
 
@@ -254,15 +251,13 @@ footer p {
   from {
     opacity: 0%;
   }
+
   to {
     opacity: 100%;
   }
 }
 
-
 .speaker img {
-  /* height: 50%;
-    width: 50%; */
   max-height: 150px;
   max-width: 150px;
 }
@@ -391,7 +386,7 @@ footer p {
     background-color: #ececec;
     height: 60px;
   }
-  
+
   .top-fixed-navbar-desktop img {
     height: 60px;
   }
@@ -413,8 +408,6 @@ footer p {
 
   .fixed-navbar-campaign {
     border: 2px solid var(--main-red-color);
-
-    /* display: inline-block; */
     margin: 0;
     padding: 10px;
   }
@@ -433,7 +426,6 @@ footer p {
     background-size: cover;
     -webkit-text-fill-color: rgba(249, 19, 19, 0.608);
     -webkit-background-clip: text;
-    background-clip: text;
     animation: animate 5s ease forwards;
     font-weight: 900;
     font-size: 3.5rem;
@@ -443,6 +435,7 @@ footer p {
     from {
       background-position: 20% 80%;
     }
+
     to {
       background-position: 60% 90%;
     }
@@ -469,8 +462,6 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    /* padding: 10px; */
     padding-top: 10px;
   }
 

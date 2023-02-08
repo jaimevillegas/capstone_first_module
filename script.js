@@ -1,8 +1,6 @@
 const navMenu = document.getElementById('modal-menu');
 const open = document.getElementById('open-modal-menu');
 const close = document.getElementById('close-modal-menu');
-const menuAbout = document.getElementById('about-page');
-const menuItem = document.querySelectorAll('.menu-item');
 const speakersContainer = document.getElementById('speakers-container');
 const buttonMore = document.getElementById('button-more');
 
@@ -58,7 +56,7 @@ const speakers = [
 ];
 
 
-function createSpeaker(name, profession, description, image, index) {
+function createSpeaker(name, profession, description, image) {
     const workHTML = document.createElement('article');
     workHTML.className = 'speaker';
     workHTML.innerHTML = `
@@ -82,7 +80,7 @@ function mobileMenuDisplayBlock() {
 }
 
 function showSpeakersDesktop() {
-    speakers.forEach((speaker, index) => {
+    speakers.forEach((speaker) => {
         createSpeaker(speaker.name, speaker.profession, speaker.description, speaker.image);
     });
 }

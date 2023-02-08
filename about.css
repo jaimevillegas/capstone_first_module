@@ -37,21 +37,20 @@ footer p {
 
 .modal-dialog {
   display: none;
-  /* display: block; */
   position: fixed;
   z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
   height: 100vh;
-  overflow-y:hidden; 
+  overflow-y: hidden;
   background-color: var(--darker-grey);
 }
 
 .modal-dialog ul {
   list-style-type: none;
   padding: 40px;
-} 
+}
 
 .modal-dialog i {
   font-size: 1.2em;
@@ -59,6 +58,11 @@ footer p {
   position: relative;
   left: 90%;
   transition: 0.2s linear;
+}
+
+.about-navigation-mobile i {
+  font-size: 40px;
+  color: rgb(87, 87, 87);
 }
 
 .modal-dialog i:hover {
@@ -70,12 +74,26 @@ footer p {
   margin: 40px auto;
 }
 
-
 .modal-dialog a {
   color: var(--light-grey);
   font-size: 2rem;
   text-decoration: none;
   transition: 0.2s linear;
+}
+
+.about-contact-us-main {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-contact-us-main a {
+  font-size: 0.8rem;
+  margin-top: 0;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .modal-dialog a:hover {
@@ -96,15 +114,6 @@ footer p {
   width: 50px;
   height: 50px;
   margin-bottom: 20px;
-}
-
-.about-navigation-mobile i {
-  font-size: 40px;
-  color: rgb(87, 87, 87);
-}
-
-.about-main-text {
-  /* background-color: #fbfbfb; */
 }
 
 .about-hello-sharing-world {
@@ -132,26 +141,11 @@ footer p {
   margin-bottom: 0;
 }
 
-.about-contact-us-main {
-  margin-top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .about-contact-us-main p {
   padding: 10px;
   text-align: center;
   font-size: 0.8rem;
   margin-bottom: 0;
-}
-
-.about-contact-us-main a {
-  font-size: 0.8rem;
-  margin-top: 0;
-  font-weight: bold;
-  margin-bottom: 20px;
 }
 
 .about-cc-logo {
@@ -244,7 +238,6 @@ footer p {
 
 .container-summit {
   background-color: #a62213b0;
-  /* max-height: 100px; */
   height: 100%;
   padding: 0;
   margin: 10px auto;
@@ -374,7 +367,7 @@ footer p {
     background-color: #ececec;
     height: 60px;
   }
-  
+
   .top-fixed-navbar-desktop img {
     height: 60px;
   }
@@ -396,8 +389,6 @@ footer p {
 
   .fixed-navbar-campaign {
     border: 2px solid var(--main-red-color);
-
-    /* display: inline-block; */
     margin: 0;
     padding: 10px;
   }
@@ -446,7 +437,7 @@ footer p {
     margin-bottom: 30px;
   }
 
-  .global-summits-container{
+  .global-summits-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 60%;

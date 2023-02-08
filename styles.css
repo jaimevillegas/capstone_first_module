@@ -417,7 +417,23 @@ footer p {
   }
 
   .main-title {
-    font-size: 3rem;
+    background-image: url('images/background-text.png');
+    background-size: cover;
+    -webkit-text-fill-color: rgba(249, 19, 19, 0.608);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animate 5s ease forwards;
+    font-weight: 900;
+    font-size: 3.5rem;
+  }
+
+  @keyframes animate {
+    from {
+      background-position: 20% 80%;
+    }
+    to {
+      background-position: 60% 90%;
+    }
   }
 
   .main-description {

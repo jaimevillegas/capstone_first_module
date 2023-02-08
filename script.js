@@ -10,15 +10,15 @@ const speakers = [
     {
         name: 'Tony Stark',
         profession: 'Billionaire Industrialist and Inventor',
-        description: 'Genious inventor, and consummate engineer who uses a powered suit of armor to protect the world as the armored superhero Iron Man.',
+        description: 'Genious inventor, and consummate engineer who uses a powered suit of armor to protect the world as Iron Man.',
         image: './images/tony.png',
     },
-    {
-        name: 'Maurice Moss',
-        profession: 'Programmer, IT Services',
-        description: 'IT Technician at Reynholm Industries in London.',
-        image: './images/moss.png',
-    },
+    // {
+    //     name: 'Maurice Moss',
+    //     profession: 'Programmer, IT Services',
+    //     description: 'IT Technician at Reynholm Industries in London.',
+    //     image: './images/moss.png',
+    // },
     {
         name: 'C3PO',
         profession: 'Humanoid Robot',
@@ -40,15 +40,15 @@ const speakers = [
     {
         name: 'Tony Stark',
         profession: 'Billionaire Industrialist and Inventor',
-        description: 'Genious inventor, and consummate engineer who uses a powered suit of armor to protect the world as the armored superhero Iron Man.',
+        description: 'Genious inventor, and consummate engineer who uses a powered suit of armor to protect the world as Iron Man.',
         image: './images/tony.png',
     },
-    {
-        name: 'Maurice Moss',
-        profession: 'Programmer, IT Services',
-        description: 'IT Technician at Reynholm Industries in London.',
-        image: './images/moss.png',
-    },
+    // {
+    //     name: 'Maurice Moss',
+    //     profession: 'Programmer, IT Services',
+    //     description: 'IT Technician at Reynholm Industries in London.',
+    //     image: './images/moss.png',
+    // },
     {
         name: 'C3PO',
         profession: 'Humanoid Robot',
